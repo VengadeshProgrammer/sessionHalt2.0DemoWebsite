@@ -23,7 +23,7 @@ export default function SocialFeed() {
   useEffect(() => {
   (async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/verify-session", {
+      const res = await fetch("/api/verify-session", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
