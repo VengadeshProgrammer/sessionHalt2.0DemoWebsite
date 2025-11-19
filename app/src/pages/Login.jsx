@@ -27,7 +27,7 @@ useEffect(() => {
 
   (async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/login", {
+      const res = await fetch("/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -81,7 +81,7 @@ useEffect(() => {
 
     const passwordHash = await sha256Hash(password);
 
-    const res = await fetch("http://localhost:3001/api/login", {
+    const res = await fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
