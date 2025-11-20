@@ -1,6 +1,6 @@
 export async function sendToMLModel(fingerprint, accFingerprints) {
   try {
-    const response = await fetch("http://192.168.1.8:5000/replace", {
+    const response = await fetch("https://sessionhalt2-0-s-ml.onrender.com/replace", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
