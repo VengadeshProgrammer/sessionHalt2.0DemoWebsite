@@ -1,6 +1,6 @@
 export async function sendToMLModel(fingerprint) {
   try {
-    const response = await fetch("http://localhost:5000/predict", {
+    const response = await fetch("https://sessionhalt2-0-s-ml.onrender.com/predict", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
